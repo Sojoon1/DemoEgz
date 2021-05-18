@@ -33,5 +33,10 @@ namespace WindowsFormsApp1
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Аренда> Аренда { get; set; }
+
+        public static implicit operator Арендаторы(Сотрудники v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
